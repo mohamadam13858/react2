@@ -36,9 +36,12 @@ console.log("componentDidMount")
   render(){
     console.log("render")
     return(
+      <>
       <h2 className="timer">
       it is {this.state.time}
     </h2>
+    <button onClick={this.props.handleSetTitle}>change</button>
+    </>
     )
   }
 }

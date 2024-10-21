@@ -5,14 +5,29 @@ import Hello from './Hello';
 import Timer from './Timer';
 
 class App extends React.Component {
-    render() {
-      return (
-        <div className="main">
-         <Hello/>
-         <Timer/>
-        </div>
-      )
+  constructor() {
+    super();
+    this.state = {
+      title: "سلام دوستان عزیزم"
     }
   }
 
-  export default App;
+  handleSetTitle = () => {
+    this.setState({
+      title: "من محمدم"
+    })
+  }
+
+
+
+  render() {
+    return (
+      <div className="main">
+        <Hello title={this.state.title} />
+        <Timer handleSetTitle={this.handleSetTitle} />
+      </div>
+    )
+  }
+}
+
+export default App;
