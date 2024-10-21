@@ -23,3 +23,32 @@ body{
     background: black;
     color: chocolate;
 }
+.action_button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: aqua;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(245, 165, 7);
+    text-decoration: none;
+    cursor: pointer;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    font-weight: bold;
+}
+.action_button:hover{
+    box-shadow: 0 0 20px rgb(218, 162, 8);
+    letter-spacing: 3px;
+    
+}
+.action_button:active{
+    background-color: #8842d5;
+    box-shadow: 0 6px rgb(75, 75, 104);
+    transform: translateY(5px);
+}

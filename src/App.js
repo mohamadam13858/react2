@@ -10,19 +10,15 @@ class App extends React.Component {
     this.state = {
       title: "سلام دوستان عزیزم"
     }
-    this.handleSetTitle = this.handleSetTitle.bind(this)
   }
 
- /* handleSetTitle = () => {
-    this.setState({
-      title: "من محمدم"
-    })
-  }*/
-  handleSetTitle(){
+  handleSetTitle = () => {
     this.setState({
       title: "من محمدم"
     })
   }
+
+ 
 
   render() {
     return (
