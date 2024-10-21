@@ -8,7 +8,7 @@ class Timer extends React.Component{
   constructor(){
     super()
     this.state = {
-      time : new Date().toLocaleTimeString()
+      time : 10
     }
   }
 
@@ -18,14 +18,13 @@ console.log("componentDidMount")
 
     interval = setInterval(()=>{
       this.setState({
-        time : new Date().toLocaleTimeString()
+        time : this.state.time - 1
       })
     } , 1000)
-
   }
 
   componentDidUpdate(){
-    if (this.state.time == "4:39:08 PM") {
+    if (this.state.time == 0) {
       clearInterval(interval);
     }
   }
