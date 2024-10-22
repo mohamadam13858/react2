@@ -1,10 +1,10 @@
-import React from 'react';
+import React , {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './style.css'
 import Hello from './Hello';
 import Timer from './Timer';
 
-class App extends React.Component {
+/*class App extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -28,6 +28,18 @@ class App extends React.Component {
       </div>
     )
   }
+}*/
+const App = ()=>{
+  const [title , setTitle] = useState("سلام دوستان عزیزم");
+  const handleSetTitle = ()=>{
+    setTitle("من محمدم")
+  }
+  return(
+    <div className="main">
+    <Hello title={title} />
+    <Timer x={handleSetTitle} />
+  </div>
+  )
 }
 
 export default App;
