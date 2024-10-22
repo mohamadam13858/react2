@@ -75,7 +75,10 @@ let s = this.state.second
       <span className="action_button start_burtton" onClick={this.startInterval}>start</span>
       <span className="action_button stop_burtton" onClick={this.stopInterval}>stop</span>
       <span className="action_button reset_burtton" onClick={this.resetInterval}>reset</span>
-      <span className="action_button reset_burtton" onClick={this.props.x}>test</span>
+      <span className="action_button reset_burtton" onClick={this.props.x}
+      style={{background:this.props.isLight ? "black" : "white" , 
+        color : this.props.isLight ? "white" : "black"
+      }}>{this.props.isLight ? "dark" : "light"}</span>
     </div>
     </>
     )
