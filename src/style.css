@@ -58,3 +58,12 @@ body{
 .timer:hover{
     box-shadow: 0 0 60px rgb(162, 2, 2);
 }
+.Item_style{
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+.Item_style:hover{
+    color:  rgb(255, 230, 0);
+}

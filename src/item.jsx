@@ -8,7 +8,7 @@ const Item = (props) => {
         alert(e.target.innerHTML)
     }
     return (
-        <div onClick={handleDeleteItem}>
+        <div className="Item_style" onClick={handleDeleteItem}>
             {props.children}
         </div>
     )
